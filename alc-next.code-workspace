@@ -1,0 +1,26 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "search.exclude": {
+      "**/.yarn": true,
+      "**/.pnp.*": true
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib"
+  },
+  "extensions": {
+    "recommendations": [
+      "arcanis.vscode-zipfs",
+      "esbenp.prettier-vscode",
+      "stylelint.vscode-stylelint",
+      "johnsoncodehk.volar"
+    ]
+  }
+}
