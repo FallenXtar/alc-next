@@ -1,6 +1,6 @@
 # ALC-Next 众生之门战场模拟器
 
-
+[![star](https://gitee.com/xtarz/alc-next/badge/star.svg?theme=dark)](https://gitee.com/xtarz/alc-next/stargazers)
 
 - [ALC-Next 众生之门战场模拟器](#alc-next-众生之门战场模拟器)
   - [这是什么？](#这是什么)
@@ -12,8 +12,6 @@
     - [步骤](#步骤)
   - [:warning: 注意 :warning:](#warning-注意-warning)
   - [设定与实现](#设定与实现)
-  - [Recommended IDE Setup](#recommended-ide-setup)
-  - [Type Support For `.vue` Imports in TS](#type-support-for-vue-imports-in-ts)
 
 ## 这是什么？
 
@@ -49,21 +47,22 @@
 1. 假设你已经完成了 [环境配置](#环境)
 2. 克隆仓库到本地
 
-   ```Sh  
+   ```Sh
    # Coding 仓库
    git clone git@e.coding.net:xtarz/alc-next/alc-next.git
 
-   # Github 仓库 
+   # Github 仓库
    git clone git@github.com:FallenXtar/alc-next.git
 
    # Gitee 仓库
+   git clone git@gitee.com:xtarz/alc-next.git
 
    ```
 
 3. 安装依赖
 
    ```Sh
-   yarn
+   yarn install
    ```
 
 4. (可选）用 `VS Code` 打开 `alc-next.code-workspace`
@@ -91,10 +90,10 @@
   ```JSON
   // tsconfig.json
   {
-  "compilerOptions": {
+   "compilerOptions": {
     // ...
     "types": ["element-plus/global"]
-  }
+   }
   }
   ```
 
@@ -121,13 +120,6 @@
 - [ ] 玩家死亡后经过 30 分钟现实时间复活，经验值仍为 0
 - [ ] 玩家初始具有不同的种族和对应的种族能力
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
 
 [link_vscode]: (https://code.visualstudio.com/)
 [link_nodejs]: (https://nodejs.org/)
