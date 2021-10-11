@@ -13,7 +13,8 @@
       "**/.yarn": true,
       "**/.pnp.*": true
     },
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "search-online.search-engine": "Baidu"
   },
   "extensions": {
     "recommendations": [

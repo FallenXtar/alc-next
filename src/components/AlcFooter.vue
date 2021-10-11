@@ -8,7 +8,7 @@
     <el-row>
       <div>
         <span>
-          ALC Simulator 由
+          ALC-NEXT 由
           <el-popover trigger="hover" placement="bottom" width="180px">
             <template #reference>
               <el-link
@@ -58,30 +58,37 @@
         </span>
       </div>
     </el-row>
-    <el-divider>
-      {{ text.versionInfo }}{{ version }}
-      <el-divider direction="vertical"></el-divider>
-      <el-link
-        type="primary"
-        target="_blank"
-        href="https://github.com/FallenXtar/alc-next"
-        >Github</el-link
+    <el-row justify="center">
+      <el-col
+        ><el-link
+          type="default"
+          target="_blank"
+          href="https://support.qq.com/product/358477"
+          >意见、建议、反馈</el-link
+        ><el-divider direction="vertical"></el-divider>
+        <el-link
+          type="primary"
+          target="_blank"
+          href="https://github.com/FallenXtar/alc-next"
+          >Github</el-link
+        >
+        <el-divider direction="vertical"></el-divider>
+        <el-link
+          type="primary"
+          target="_blank"
+          href="https://gitee.com/xtarz/alc-next"
+          >Gitee</el-link
+        >
+        <el-divider direction="vertical"></el-divider>
+        <el-link
+          type="primary"
+          target="_blank"
+          href="https://xtarz.coding.net/p/alc-next/d/alc-next/git"
+          >Coding</el-link
+        ></el-col
       >
-      <el-divider direction="vertical"></el-divider>
-      <el-link
-        type="primary"
-        target="_blank"
-        href="https://gitee.com/xtarz/alc-next"
-        >Gitee</el-link
-      >
-      <el-divider direction="vertical"></el-divider>
-      <el-link
-        type="primary"
-        target="_blank"
-        href="https://xtarz.coding.net/p/alc-next/d/alc-next/git"
-        >Coding</el-link
-      >
-    </el-divider>
+    </el-row>
+    <el-divider> {{ text.versionInfo }}{{ version }} </el-divider>
   </el-footer>
 </template>
 
@@ -121,6 +128,6 @@ export default defineComponent({
   vertical-align: 0;
 }
 .el-divider__text {
-  padding: 0  0;
+  padding: 0 0;
 }
 </style>

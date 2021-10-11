@@ -115,11 +115,12 @@ export default defineComponent({
       SandboxInstance.sandboxCapicity = this.inputValue.player;
       SandboxInstance.initModel();
     },
-    resetModel() {
-      
-    },
+    resetModel() {},
     runModel() {
       SandboxInstance.run(this.inputValue.turnsToRun);
+      this.$store.commit('resultShow');
+      console.log(this.$store.state.showResult);
+      
     },
   },
 });

@@ -18,7 +18,7 @@ export default defineComponent({
     AlcFrameAlpha,
     AlcFrameBeta,
   },
-    created(): void {
+  created(): void {
     if (!sessionStorage.getItem("alertConfirmed")) {
       ElMessageBox.alert(
         "请勿尝试使用异常或过大的参数初始化模型！可能导致你的浏览器冻结甚至设备死机！",
