@@ -1,20 +1,20 @@
 <template>
   <el-collapse-transition>
     <el-card shadow="hover">
-      <el-empty :description="messages.desc" v-show="showResult">
-        <template #image>
-          <img src="../assets/bg.jpg" alt="ALC Logo" />
-        </template>
-      </el-empty>
+      <alc-frame-beta-empty v-show="false"></alc-frame-beta-empty>
     </el-card>
   </el-collapse-transition>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import AlcFrameBetaEmpty from "./AlcFrameBetaEmpty.vue";
 
 export default defineComponent({
   name: "AlcFrameBeta",
+  components: {
+    AlcFrameBetaEmpty,
+  },
   data() {
     return {
       showResult: true,

@@ -28,7 +28,6 @@
               </a>
             </el-row>
           </el-popover>
-          
 
           使用&nbsp;
 
@@ -65,15 +64,22 @@
       <el-link
         type="primary"
         target="_blank"
-        href="https://github.com/FallenXtar/alc-exp-simulator"
+        href="https://github.com/FallenXtar/alc-next"
         >Github</el-link
       >
-      <el-divider direction="vertical"> </el-divider>
+      <el-divider direction="vertical"></el-divider>
       <el-link
         type="primary"
         target="_blank"
-        href="https://gitee.com/xtar/alc-exp-simulator"
+        href="https://gitee.com/xtarz/alc-next"
         >Gitee</el-link
+      >
+      <el-divider direction="vertical"></el-divider>
+      <el-link
+        type="primary"
+        target="_blank"
+        href="https://xtarz.coding.net/p/alc-next/d/alc-next/git"
+        >Coding</el-link
       >
     </el-divider>
   </el-footer>
@@ -95,7 +101,7 @@ export default defineComponent({
       version: pkg.version,
       text: {
         tip: "为保证功能正常，请使用现代化的浏览器，并以1024*768以上分辨率访问本网站",
-        versionInfo: "当前版本：",
+        versionInfo: "版本：",
       },
     };
   },
@@ -113,5 +119,8 @@ export default defineComponent({
 .el-link {
   font-size: 16px;
   vertical-align: 0;
+}
+.el-divider__text {
+  padding: 0  0;
 }
 </style>

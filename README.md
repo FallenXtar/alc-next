@@ -12,6 +12,10 @@
     - [步骤](#步骤)
   - [:warning: 注意 :warning:](#warning-注意-warning)
   - [设定与实现](#设定与实现)
+  - [做出贡献](#做出贡献)
+    - [对于非开发者](#对于非开发者)
+    - [对于开发者](#对于开发者)
+    - [对于资助者](#对于资助者)
 
 ## 这是什么？
 
@@ -40,7 +44,7 @@
 | 包管理器 | [Yarn][link_yarn]                             |
 
 > 注：  
-> <b id="f1">1</b>. 如果运行在 Windows 系统上，考虑使用 [NVM for Windows](https://github.com/coreybutler/nvm-windows) [↩](#a1)
+> <b id="f1">1</b>. 如果运行在 Windows 系统上，推荐使用 [NVM for Windows](https://github.com/coreybutler/nvm-windows) [↩](#a1)
 
 ### 步骤
 
@@ -120,7 +124,34 @@
 - [ ] 玩家死亡后经过 30 分钟现实时间复活，经验值仍为 0
 - [ ] 玩家初始具有不同的种族和对应的种族能力
 
+## 做出贡献
+
+### 对于非开发者
+
+如果你有什么好的想法，欢迎和我们一起分享！即便你不是开发者，你也可以在任意一个仓库 Star（标星） 我们的项目，我会更有动力！创建一个代码托管平台的账号并不困难，通常可以采用关联已有账号的方式，一般也不需要实名认证。
+
+**推荐** ：你可以访问我们的 [兔小巢][link_txc] 项目反馈页面来方便地提交你的建议、意见。
+
+你也可以在以下任意一个代码托管仓库提出 issues，如果你不知道什么是 issues，可以参考上一条。
+
+- [Github][link_github] （国外，英文界面）
+- [Gitee][link_gitee] （国内，中文界面）
+
+### 对于开发者
+
+为方便协作和信息共享，推荐使用 [Coding][link_coding] 项目管理平台。  
+不过，为了保证可访问性，项目的代码默认推送位置是 [Github][link_github] ，另外的两个仓库会每天进行一次自动同步以保持代码一致。你仍然可以在任意一个仓库进行 Fork 和 Pull Request，我会手动处理，必要时也会手动同步仓库。
+
+### 对于资助者
+
+如果你觉得我们的项目很不错，欢迎
+
+
 
 [link_vscode]: (https://code.visualstudio.com/)
 [link_nodejs]: (https://nodejs.org/)
 [link_yarn]: (https://yarnpkg.com)
+[link_github]: (https://github.com/FallenXtar/alc-next)
+[link_gitee]: (https://gitee.com/xtarz/alc-next)
+[link_coding]: (https://xtarz.coding.net/p/alc-next/d/alc-next/git)
+[link_txc]: (https://support.qq.com/products/358477)
