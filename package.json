@@ -26,7 +26,7 @@
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
     "axios": "^0.22.0",
-    "element-plus": "^1.1.0-beta.17",
+    "element-plus": "^latest",
     "lodash": "^4.17.21",
     "vue": "next",
     "vuex": "^4.0.2"

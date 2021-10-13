@@ -1,8 +1,8 @@
 <template>
   <el-collapse-transition>
     <el-card shadow="hover">
-      <alc-frame-beta-empty v-show="!showResult"></alc-frame-beta-empty>
-      <alc-frame-beta-result v-show="showResult"></alc-frame-beta-result>
+      <alc-frame-beta-empty v-if="!showResult"></alc-frame-beta-empty>
+      <alc-frame-beta-result v-if="showResult"></alc-frame-beta-result>
     </el-card>
   </el-collapse-transition>
 </template>

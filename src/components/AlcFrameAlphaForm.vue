@@ -63,6 +63,8 @@
 import { defineComponent } from "vue";
 import { VideoPlay } from "@element-plus/icons";
 import { SandboxInstance } from "../scripts/sandbox";
+import { ElMessage } from "element-plus";
+import { debounce } from "lodash";
 
 export default defineComponent({
   name: "AlcFrameAlphaForm",
@@ -117,13 +119,21 @@ export default defineComponent({
     },
     resetModel() {},
     runModel() {
-      SandboxInstance.run(this.inputValue.turnsToRun);
-      this.$store.commit('resultShow');
-      console.log(this.$store.state.showResult);
-      
+      if (SandboxInstance.map.length === 0) {
+        alert();
+      } else {
+        this.$store.commit("resultShow");
+
+        SandboxInstance.run(this.inputValue.turnsToRun);
+        this.$store.commit("updateData");
+      }
     },
   },
 });
+
+const alert = debounce(function () {
+  ElMessage.error("未初始化模型");
+}, 500);
 </script>
 
 <style lang="scss" scoped>
